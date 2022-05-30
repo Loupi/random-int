@@ -1,17 +1,12 @@
 {
-	"name": "random-int",
+	"name": "random-int-cjs",
 	"version": "3.0.0",
-	"description": "Generate a random integer",
+	"description": "Generate a random integer (commonjs)",
 	"license": "MIT",
-	"repository": "sindresorhus/random-int",
-	"funding": "https://github.com/sponsors/sindresorhus",
-	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "https://sindresorhus.com"
-	},
-	"type": "module",
-	"exports": "./index.js",
+	"repository": "Loupi/random-int",
+	"author": "Louis-Pierre Beaumont",
+	"main": "./index.js",
+	"types": "./index.d.ts",
 	"engines": {
 		"node": ">=12"
 	},
@@ -36,9 +31,14 @@
 	],
 	"devDependencies": {
 		"ava": "^3.15.0",
-		"in-range": "^3.0.0",
-		"stable-fn": "^3.0.0",
+		"in-range-cjs": "git+https://github.com/Loupi/in-range.git",
+		"stable-fn-cjs": "git+https://github.com/Loupi/stable-fn.git",
 		"tsd": "^0.14.0",
 		"xo": "^0.38.2"
+	},
+	"xo": {
+		"rules": {
+			"unicorn/prefer-module": 0
+		}
 	}
 }

@@ -1,7 +1,7 @@
-import test from 'ava';
-import inRange from 'in-range';
-import stableFn from 'stable-fn';
-import randomInteger from './index.js';
+const test = require('ava');
+const inRange = require('in-range-cjs');
+const stableFn = require('stable-fn-cjs');
+const randomInteger = require('./index.js');
 
 const inRangeCheck = ({start, end}) => stableFn(() => inRange(randomInteger(start, end), {start, end}));
 
