@@ -1,4 +1,4 @@
-export default function randomInteger(minimum, maximum) {
+function randomInteger(minimum, maximum) {
 	if (maximum === undefined) {
 		maximum = minimum;
 		minimum = 0;
@@ -12,3 +12,5 @@ export default function randomInteger(minimum, maximum) {
 		(Math.random() * (maximum - minimum + 1)) + minimum
 	);
 }
+
+module.exports = randomInteger;
